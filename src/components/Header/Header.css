@@ -1,0 +1,115 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #ffffff, #f8f8f8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  cursor: pointer;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Navigation Menu */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-list li a.active,
+.nav-list li a:hover {
+  color: #ff6600;
+}
+
+/* Right Section */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.login_btn {
+  padding: 6px 14px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  color: #333;
+}
+
+/* Toggle Button */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-list {
+    position: fixed;
+    top: 70px;
+    left: 0; /* For left side slide */
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 20px;
+    padding: 30px 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 999;
+    align-items: center;
+  }
+
+  .nav-list.show-menu {
+    transform: translateX(0);
+  }
+
+  .search {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .right-section {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

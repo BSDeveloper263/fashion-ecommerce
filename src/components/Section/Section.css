@@ -1,0 +1,27 @@
+.sections {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* All sections will be full width, no overflow */
+.section {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+
+ 
+ 
+.about {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+.services {
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+}
+.contact {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+

@@ -1,0 +1,161 @@
+/* Home.css */
+
+.hero-viewport {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  height: 100vh;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.hero-left {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.main-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.vibrant {
+  color: #ff4d4d;
+  text-shadow: 2px 2px #ffffff;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.badges {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #fff;
+  color: #ff4d4d;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.shop-btn,
+.explore-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.shop-btn {
+  background-color: #222;
+  color: #fff;
+}
+
+.explore-btn {
+  background-color: #fff;
+  color: #222;
+}
+
+.shop-btn:hover {
+  background-color: #ff4d4d;
+  transform: translateY(-3px);
+}
+
+.explore-btn:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.hero-right {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-showcase {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.product-showcase img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.product-showcase:hover {
+  transform: scale(1.05);
+}
+
+.tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #ff4d4d;
+  color: #fff;
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .hero-viewport {
+    flex-direction: column;
+    padding: 120px 20px;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .product-showcase {
+    margin-top: 30px;
+  }
+}
