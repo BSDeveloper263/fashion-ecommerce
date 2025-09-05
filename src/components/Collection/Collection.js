@@ -83,6 +83,26 @@ const products = [
     sizes: ['S', 'M', 'L'],
     image: 'https://sassafras.in/cdn/shop/products/SFTOPS40770-1.jpg?v=1751460277  ',
     details: 'Trendy and vibrant top for casual outings.'
+  },
+  {
+    id: 9,
+    category: 'Men',
+    name: 'Men Shirt',
+    price: '₹1099',
+    rating: '⭐️⭐️⭐️⭐️',
+    sizes: ['M', 'L', 'XL'],
+    image: 'https://thesparkshop.in/wp-content/uploads/2022/10/new-spring-double-pocket-mens-fashion-shirt-brand-men-long-sleeved-solid-shirts-slim-fit-casual-men-shirt-social-extra-image-2.jpg  ',
+    details: 'Formal wear shirt with soft finish and perfect fit.'
+  },
+  {
+    id: 10,
+    category: 'Women',
+    name: 'Women Top',
+    price: '₹799',
+    rating: '⭐️⭐️⭐️⭐️',
+    sizes: ['S', 'M', 'L'],
+    image: 'https://sassafras.in/cdn/shop/products/SFTOPS40770-1.jpg?v=1751460277  ',
+    details: 'Trendy and vibrant top for casual outings.'
   }
 ];
 
