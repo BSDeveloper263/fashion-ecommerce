@@ -53,7 +53,7 @@ const About = () => {
             <img style={{width:'100px'}} src={item.image} alt={item.name} />
             <h3>{item.name}</h3>
             <p>{item.desc}</p>
-            <button className="view-more">View More</button>
+            <button className="view-more">See More...</button>
           </div>
         ))}
       </div>
